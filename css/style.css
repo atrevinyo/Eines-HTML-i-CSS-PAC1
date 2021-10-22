@@ -327,9 +327,9 @@ tbody tr td:first-child{
         font-size: 16px;
     }
 
-    .lema {
-        max-width: 100%;
-        font-size: 20px;
+    p.lema {
+        /* max-width: 100%; */
+        font-size: 50px;
     }
 
     .peu-pagina-index  {
