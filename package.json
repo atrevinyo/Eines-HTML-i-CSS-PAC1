@@ -1,0 +1,25 @@
+{
+  "name": "pac1",
+  "version": "1.0.0",
+  "description": "Eines HTML i CSS I",
+  "devDependencies": {
+    "autoprefixer": "^9.8.6",
+    "npm-run-all": "^4.1.5",
+    "parcel": "^2.0.0",
+    "rimraf": "^3.0.2"
+  },
+  "scripts": {
+    "parcel:dev": "parcel index.html",
+    "parcel:build": "parcel build index.html",
+    "dev": "npm-run-all clean parcel:dev",
+    "build": "npm-run-all clean parcel:build",
+    "clean": "rimraf dist .cache .cache-loader",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Albert Treviño",
+  "license": "ISC",
+  "dependencies": {
+    "viewerjs": "^1.10.1"
+  }
+}
