@@ -64,13 +64,14 @@ header  {
     background-image: url('../img/pexels-zukiman-mohamad-22804.jpg');
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 100%;
+    background-attachment: fixed;
+    background-size: cover;
+    /* background-size: 100%; */
     /* Alinea en columna: capçalera, lema i peu de pàgina i els centrem*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     text-align: center;
-
 }
 
 
@@ -310,8 +311,10 @@ tbody tr td:first-child{
 
 @media (max-width: 480px) {
 
+
     main {
-        width: 90%; /*Fem que tot el contingut ocupi el 90% de tota la pantalla*/
+        width: 95%; /*Fem que tot el contingut ocupi el 90% de tota la pantalla*/
+        font-size: 16px
     }
 
     /*Mofifiquem la mida dels títols*/
@@ -325,7 +328,12 @@ tbody tr td:first-child{
     }
 
     .lema {
+        max-width: 100%;
         font-size: 20px;
+    }
+
+    .peu-pagina-index  {
+        height: 0%;
     }
 
     .introduccio-detall {
@@ -336,12 +344,20 @@ tbody tr td:first-child{
     .main-section section div {
         flex-direction: column;
         flex: 1;
+        max-width: 400px;
     }
 
 
-.cards-cat {
-    flex-direction: column;
-}
+    .cards-cat {
+        flex-direction: column;
+        row-gap: 15px;
+    }
+
+    .iframe-container {
+        text-align: center;
+        max-width: ;
+    }
+
 
 
 }
