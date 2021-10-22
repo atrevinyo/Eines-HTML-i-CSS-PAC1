@@ -314,7 +314,10 @@ tbody tr td:first-child{
 
     main {
         width: 95%; /*Fem que tot el contingut ocupi el 90% de tota la pantalla*/
-        font-size: 16px
+        font-size: 16px;
+        text-align: center;
+
+
     }
 
     /*Mofifiquem la mida dels títols*/
@@ -355,10 +358,14 @@ tbody tr td:first-child{
 
     .iframe-container {
         text-align: center;
-        max-width: ;
     }
 
 
+
+    iframe {
+        max-width: 100%;
+        height: 70%;
+    }
 
 }
 
